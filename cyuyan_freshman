@@ -1,0 +1,133 @@
+//#include<stdio.h>\\八进制字符转化
+//int main(void)
+//{
+//	int a;
+//	scanf_s("%o", &a);
+//	printf("%d", a);
+//	return 0;
+//}
+
+
+//#include<stdio.h>//12345排列组合三个数
+//int main(void)
+//{
+//	int n = 0;
+//	for (int x = 1; x < 5; x++)
+//	{
+//		for (int y = 1; y < 5; y++)
+//		{
+//			for (int z = 1; z < 5; z++)//z=1可以刷新循环
+//			{
+//				if (x != y && x != z && y != z)//防止三个数重复
+//				{
+//					n++;
+//					printf("%d%d%d\t", x, y, z);
+//				}
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>//根据首字母判断星期
+//int main(void)
+//{
+//	char week_1;
+//	char week_2;
+//	char c;
+//	printf("请输入第一个字母\n");
+//	scanf_s("%c", &week_1);
+//	switch (week_1)
+//	{
+//	case 'M':printf("星期一"); break;
+//	case 'T':
+//		printf("请输入第二个字母\n");
+//		scanf_s("%c",&c);//回车键也算作一个字符，这里把它垃圾处理
+//		scanf_s("%c", &week_2);
+//		if (week_1 == 'U')
+//		{
+//			printf("星期二");
+//		}
+//		else {
+//			printf("星期四");
+//		}break;
+//	case'W':printf("星期三"); break;
+//	case'F':printf("星期五"); break;
+//	case'S':printf("星期六或者星期天");
+//		scanf_s("%s", &week_2);
+//		if (week_2 == 'U')
+//		{
+//			printf("星期天");
+//		}
+//		else
+//		{
+//			printf("星期六");
+//		}
+//		break;
+//	default:break;
+//	}
+//		
+//	return 0;
+//}
+
+//#include <stdio.h>//求最大公约数与最小公倍数
+//int main(void)
+//{
+//	int a, b,c,d;
+//	scanf_s("%d%d", &a, &b);
+//	c = a;
+//	d = b;
+//	while (a != b)
+//	{
+//		if (a > b)
+//		a -= b;
+//		else 
+//	    b -= a;
+//	}
+//
+//	printf("m,n的最大公约数为%d\n", a);
+//	
+//	printf("m,n的最小公倍数为%d", c*d*a);
+//	return 0;
+//}
+
+//#include<stdio.h>//用ASCII码转换字符大小写
+//int main(void)
+//{
+//	char greeting[] = "HELLO";
+//	for (int i=0; i <= 5; i++)
+//	{
+//		printf("%c", greeting[i] + 32);
+//	}
+//	return 0;
+//}
+
+//#include<stdio.h>//三位数字转换数字顺序
+//int main(void)
+//{
+//	int number;
+//	printf("Please input a number:");
+//	scanf_s("%d", &number);
+//	int gw, sw, bw;
+//	if (number<=1000);
+//	{
+//		gw = (number % 100) % 10;
+//			sw = (number % 100) / 10;
+//			bw = (number / 100);
+//			printf("%d", gw * 100 + sw * 10 + bw * 1);
+//		
+//		if (number <= 100)
+//		{
+//			gw = number % 10;
+//		sw = number / 10;
+//		printf("%d", sw + gw * 10);
+//		if (number <= 10)
+//		{
+//			printf("%d\n", number);
+//		}
+//
+//		}
+//	
+//	}
+//	return 0;
+//}
